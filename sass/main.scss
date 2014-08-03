@@ -220,7 +220,7 @@ background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01)
     overflow-x: hidden;
   }
   input[type=text]{
-    text-align: right;
+    text-align: left;
   }
 
 
@@ -271,19 +271,20 @@ background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01)
     input{
       width:60px;
       margin:0;
+        
     }
     textarea{
       width: 100%;
     }
     &.half input{
-      margin-left:72px;
+//      margin-left:72px;
     }
     &.single input{
       width:134px;
     }
     li.label {
       width:64px;
-      padding-left:8px;
+//      padding-left:8px;
     }
   }
   ul.labels{
@@ -292,7 +293,7 @@ background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01)
       border-bottom:none;
       border-radius:4px 4px 0px 0;
       width:65px;
-      text-align:right;
+      text-align:left;
       font-size:7.5pt;
       padding-bottom:4px;
       padding-top:1px;

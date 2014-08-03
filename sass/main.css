@@ -202,7 +202,7 @@ li {
     font-size: 9pt;
     overflow-x: hidden; }
   .controls input[type=text] {
-    text-align: right; }
+    text-align: left; }
   .controls.validation-enabled input:invalid {
     border-color: #db2b2b;
     background-color: #cfa9b0;
@@ -237,19 +237,16 @@ li {
     margin: 0; }
   .controls ul.control-row textarea {
     width: 100%; }
-  .controls ul.control-row.half input {
-    margin-left: 72px; }
   .controls ul.control-row.single input {
     width: 134px; }
   .controls ul.control-row li.label {
-    width: 64px;
-    padding-left: 8px; }
+    width: 64px; }
   .controls ul.labels li {
     border: 1px solid #222222;
     border-bottom: none;
     border-radius: 4px 4px 0px 0;
     width: 65px;
-    text-align: right;
+    text-align: left;
     font-size: 7.5pt;
     padding-bottom: 4px;
     padding-top: 1px;
