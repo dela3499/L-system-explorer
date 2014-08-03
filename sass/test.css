@@ -56,7 +56,8 @@ body {
   color: #aaa;
   text-shadow: 0.1em 0.1em #222;
   letter-spacing: 1px;
-  font-size: 8pt; }
+  font-size: 8pt;
+  background-color: #051a24; }
 
 input:focus, select:focus, textarea:focus, button:focus {
   outline: none; }
@@ -102,23 +103,38 @@ li {
 .container-left {
   bottom: 0;
   cursor: default;
-  background-color: #333333;
+  background-color: #333;
   left: 0;
   padding: 0 0 0 0px;
   position: absolute;
   border-right: 1px solid #555;
   top: 0;
-  width: 228px; }
+  width: 228px;
+  display: none; }
 
 .container-right {
   bottom: 240px;
-  left: 229px;
+  left: 0;
   margin: 0;
   padding: 0;
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #1d1f20; }
+  bottom: 0;
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 .container-bottom {
   position: absolute;
@@ -128,7 +144,8 @@ li {
   right: 0;
   height: 239px;
   border-top: 1px solid #666;
-  background-color: #222; }
+  background-color: #222;
+  display: none; }
   .container-bottom .fade {
     position: absolute;
     right: 0;
@@ -297,7 +314,8 @@ li {
   border-left: none;
   border-right: none;
   padding-top: 5px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  display: none; }
   .system-info .system-name {
     display: inline;
     font-size: 14pt;
@@ -353,9 +371,9 @@ li {
       width: 0px;
       margin: 0px;
       padding: 0px;
-      transition: width .25s ease-in-out;
-      -moz-transition: width .25s ease-in-out;
-      -webkit-transition: width .25s ease-in-out; }
+      transition: width 0.25s ease-in-out;
+      -moz-transition: width 0.25s ease-in-out;
+      -webkit-transition: width 0.25s ease-in-out; }
     .actions a span {
       margin-left: 2px;
       margin-right: 4px; }
@@ -456,3 +474,5 @@ li {
       border-right: none;
       padding: 2px 0;
       text-overflow: ellipsis; }
+
+/*# sourceMappingURL=test.css.map */

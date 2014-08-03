@@ -72,6 +72,7 @@ body{
   text-shadow: 0.1em 0.1em #222;
   letter-spacing: 1px;
   font-size:8pt;
+  background-color: #051a24;
 }
 
 input:focus,
@@ -134,17 +135,28 @@ li{
   border-right:1px solid #555;
   top: $top;
   width: $left;
+  display: none; // Hack
 }
 
 .container-right{
   bottom: $bottom;
-  left: $left+1;
+//  left: $left+1;
+  left: 0;
   margin: 0;
   padding: 0;
   position: absolute;
   right: 0;
-  top: $top;
-  background-color: #1d1f20;
+//  top: $top;
+    top: 0;
+    bottom: 0;
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 .container-bottom{
   position:absolute;
@@ -155,6 +167,7 @@ li{
   height:$bottom - 1;
   border-top:1px solid #666;
   background-color:#222;
+  display: none; // Hack
   .fade{
     position:absolute;
     right:0; bottom:0; left:0;
@@ -324,6 +337,7 @@ li{
   border-right:none;
   padding-top: 5px;
   padding-bottom:10px;
+    display: none; //hack
 
   .system-name{
     display:inline;
@@ -489,6 +503,3 @@ li{
     }
   }
 }
-
-
-

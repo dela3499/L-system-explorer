@@ -59,6 +59,7 @@
   overflow: hidden;
   top: 0;
   z-index: 9999;
+  display: none; /*hack*/
 }
 
 .github-fork-ribbon-wrapper.fixed {
@@ -131,3 +132,4 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
