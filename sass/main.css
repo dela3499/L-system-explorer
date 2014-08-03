@@ -3,8 +3,8 @@
 
 #options {
   position: absolute;
-  right: 23.33333px;
-  top: 23.33333px;
+  right: 23.333px;
+  top: 23.333px;
   height: 70px;
   width: 70px;
   text-align: center;
@@ -12,9 +12,9 @@
   #options i {
     font-size: 7em;
     color: white;
-    opacity: 0.5; }
+    opacity: .5; }
     #options i:hover {
-      opacity: 0.8; }
+      opacity: .8; }
 
 div {
   -webkit-touch-callout: none;
@@ -76,7 +76,10 @@ body {
   font-size: 8pt;
   background-color: #2a4653; }
 
-input:focus, select:focus, textarea:focus, button:focus {
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
   outline: none; }
 
 ul {
@@ -120,11 +123,11 @@ li {
 .container-left {
   bottom: 0;
   cursor: default;
-  background-color: #333;
+  background-color: rgba(15, 15, 15, 0.16);
   right: 0;
   padding: 0 0 0 0px;
   position: absolute;
-  border-right: 1px solid #555;
+  border-left: 1px solid rgba(193, 193, 193, 0.31);
   top: 0;
   width: 228px;
   z-index: 1; }
@@ -149,9 +152,7 @@ li {
   background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.64) 99%, rgba(0, 0, 0, 0.65) 100%);
   /* IE10+ */
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.64) 99%, rgba(0, 0, 0, 0.65) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  /* W3C */ }
 
 .container-bottom {
   position: absolute;
@@ -184,9 +185,10 @@ li {
 .controls {
   font-size: 9pt;
   position: absolute;
-  top: 106.66667px;
+  top: 116.667px;
   bottom: 0;
-  right: 1px;
+  left: 5px;
+  right: 5px;
   overflow: hidden;
   overflow-y: auto; }
   .controls input[type=text], .controls textarea {
@@ -196,9 +198,8 @@ li {
     color: #bbb;
     resize: none;
     border: none;
-    background-color: rgba(88, 97, 100, 0.08);
+    background-color: rgba(237, 247, 247, 0);
     font-size: 9pt;
-    padding: 3px 5px;
     overflow-x: hidden; }
   .controls input[type=text] {
     text-align: right; }
@@ -231,22 +232,18 @@ li {
       border-top: 1px solid #202626;
       margin-top: 5px;
       margin-bottom: 5px; }
-    .controls li.group {
-      margin-left: 4px; }
-  .controls ul.control-row {
-    padding: 1px 0px 0px 0px; }
-    .controls ul.control-row input {
-      width: 60px;
-      margin: 0; }
-    .controls ul.control-row textarea {
-      width: 100%; }
-    .controls ul.control-row.half input {
-      margin-left: 72px; }
-    .controls ul.control-row.single input {
-      width: 134px; }
-    .controls ul.control-row li.label {
-      width: 64px;
-      padding-left: 8px; }
+  .controls ul.control-row input {
+    width: 60px;
+    margin: 0; }
+  .controls ul.control-row textarea {
+    width: 100%; }
+  .controls ul.control-row.half input {
+    margin-left: 72px; }
+  .controls ul.control-row.single input {
+    width: 134px; }
+  .controls ul.control-row li.label {
+    width: 64px;
+    padding-left: 8px; }
   .controls ul.labels li {
     border: 1px solid #222222;
     border-bottom: none;
@@ -372,9 +369,9 @@ li {
       width: 0px;
       margin: 0px;
       padding: 0px;
-      transition: width 0.25s ease-in-out;
-      -moz-transition: width 0.25s ease-in-out;
-      -webkit-transition: width 0.25s ease-in-out; }
+      transition: width .25s ease-in-out;
+      -moz-transition: width .25s ease-in-out;
+      -webkit-transition: width .25s ease-in-out; }
     .actions a span {
       margin-left: 2px;
       margin-right: 4px; }
@@ -454,5 +451,3 @@ li {
       border-right: none;
       padding: 2px 0;
       text-overflow: ellipsis; }
-
-/*# sourceMappingURL=test.css.map */

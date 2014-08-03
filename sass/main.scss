@@ -1,4 +1,4 @@
-$menu-color: #333;
+$menu-color: rgba(15, 15, 15, 0.16);
 $top:0;
 $left:228px;
 $bottom:240px;
@@ -146,7 +146,7 @@ li{
   right: 0;
   padding: 0 0 0 0px;
   position: absolute;
-  border-right:1px solid #555;
+  border-left:1px solid rgba(193, 193, 193, 0.31);
   top: $top;
   width: $left;
   z-index: 1;
@@ -170,8 +170,6 @@ background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba
 background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Opera 12+ */
 background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
 background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 }
 .container-bottom{
   position:absolute;
@@ -203,22 +201,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .controls{
   font-size:9pt;
   position:absolute;
-  top: $option-size*(5/3) - 10;
+  top: $option-size*(5/3);
   bottom:0;
-  right:1px;
+  left: 5px;
+  right:5px;
   overflow:hidden;
   overflow-y:auto;
-
   input[type=text], textarea{
     font-family:monospace;
-      font-weight: 700;
-      letter-spacing: 0.1em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     color:#bbb;
     resize: none;
     border:none;
-    background-color: rgba(237, 247, 247, 0.8);
+    background-color: rgba(237, 247, 247, 0);
     font-size:9pt;
-    padding:3px 5px;
+//    padding:3px 5px;
     overflow-x: hidden;
   }
   input[type=text]{
@@ -264,11 +262,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
       margin-bottom:5px;
     }
     &.group{
-      margin-left:4px;
+//      margin-left:4px;
     }
   }
   ul.control-row{
-    padding:1px 0px 0px 0px;
+//    padding:1px 0px 0px 0px;
 
     input{
       width:60px;
