@@ -1,3 +1,6 @@
+* {
+  overflow: hidden; }
+
 #options {
   position: absolute;
   right: 23.33333px;
@@ -181,39 +184,22 @@ li {
 .controls {
   font-size: 9pt;
   position: absolute;
-  top: 51px;
+  top: 106.66667px;
   bottom: 0;
   right: 1px;
   overflow: hidden;
   overflow-y: auto; }
-  .controls::-webkit-scrollbar {
-    width: 4px;
-    height: 4px; }
-  .controls::-webkit-scrollbar-button:start:decrement, .controls::-webkit-scrollbar-button:end:increment {
-    display: block;
-    height: 2px;
-    background-color: #232323; }
-  .controls::-webkit-scrollbar-track-piece {
-    background-color: #282828;
-    -webkit-border-radius: 0;
-    -webkit-border-bottom-right-radius: 4px;
-    -webkit-border-bottom-left-radius: 4px; }
-  .controls::-webkit-scrollbar-thumb:vertical {
-    height: 5px;
-    background-color: #6d6d6d;
-    -webkit-border-radius: 4px; }
-  .controls::-webkit-scrollbar-thumb:horizontal {
-    width: 5px;
-    background-color: #999;
-    -webkit-border-radius: 4px; }
   .controls input[type=text], .controls textarea {
     font-family: monospace;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     color: #bbb;
-    border-radius: 2px;
-    border: 1px solid #1d1d1d;
-    background-color: #42474a;
+    resize: none;
+    border: none;
+    background-color: rgba(88, 97, 100, 0.08);
     font-size: 9pt;
-    padding: 3px 5px; }
+    padding: 3px 5px;
+    overflow-x: hidden; }
   .controls input[type=text] {
     text-align: right; }
   .controls.validation-enabled input:invalid {
@@ -221,7 +207,8 @@ li {
     background-color: #cfa9b0;
     color: black; }
   .controls li {
-    display: inline-block; }
+    display: inline-block;
+    width: 100%; }
     .controls li.section {
       background-color: #27292c;
       width: 100%;
@@ -252,7 +239,7 @@ li {
       width: 60px;
       margin: 0; }
     .controls ul.control-row textarea {
-      width: 132px; }
+      width: 100%; }
     .controls ul.control-row.half input {
       margin-left: 72px; }
     .controls ul.control-row.single input {
@@ -428,7 +415,6 @@ li {
       cursor: ne-resize; }
 
 .ticker {
-  overflow-y: scroll;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -437,26 +423,6 @@ li {
   margin: 1px;
   padding: 0px;
   text-align: center; }
-  .ticker::-webkit-scrollbar {
-    width: 4px;
-    height: 4px; }
-  .ticker::-webkit-scrollbar-button:start:decrement, .ticker::-webkit-scrollbar-button:end:increment {
-    display: block;
-    height: 2px;
-    background-color: #232323; }
-  .ticker::-webkit-scrollbar-track-piece {
-    background-color: #282828;
-    -webkit-border-radius: 0;
-    -webkit-border-bottom-right-radius: 4px;
-    -webkit-border-bottom-left-radius: 4px; }
-  .ticker::-webkit-scrollbar-thumb:vertical {
-    height: 5px;
-    background-color: #6d6d6d;
-    -webkit-border-radius: 4px; }
-  .ticker::-webkit-scrollbar-thumb:horizontal {
-    width: 5px;
-    background-color: #999;
-    -webkit-border-radius: 4px; }
   .ticker .elem {
     border: 1px solid #6f6f6f;
     padding: 2px;

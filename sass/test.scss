@@ -4,14 +4,9 @@ $left:228px;
 $bottom:240px;
 $option-size: 70px;
 
-@mixin scrollbar{
-&::-webkit-scrollbar{width:4px;height:4px;}
-&::-webkit-scrollbar-button:start:decrement, &::-webkit-scrollbar-button:end:increment{ display:block;height:2px;background-color: #232323; }
-&::-webkit-scrollbar-track-piece{ background-color: #282828;-webkit-border-radius:0;-webkit-border-bottom-right-radius:4px;-webkit-border-bottom-left-radius:4px; }
-&::-webkit-scrollbar-thumb:vertical{ height:5px;background-color: #6d6d6d;-webkit-border-radius:4px; }
-&::-webkit-scrollbar-thumb:horizontal{ width:5px;background-color:#999;-webkit-border-radius:4px; }
+* {
+    overflow: hidden;
 }
-
 #options {
     position: absolute;
     right: $option-size/3;
@@ -206,10 +201,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .controls{
-  @include scrollbar;
   font-size:9pt;
   position:absolute;
-  top:51px;
+  top: $option-size*(5/3) - 10;
   bottom:0;
   right:1px;
   overflow:hidden;
@@ -217,12 +211,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
   input[type=text], textarea{
     font-family:monospace;
+      font-weight: 700;
+      letter-spacing: 0.1em;
     color:#bbb;
-    border-radius:2px;
-    border:1px solid #1d1d1d;
-    background-color: #42474a;
+    resize: none;
+    border:none;
+    background-color: rgba(237, 247, 247, 0.8);
     font-size:9pt;
     padding:3px 5px;
+    overflow-x: hidden;
   }
   input[type=text]{
     text-align: right;
@@ -239,6 +236,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
   li{
     display:inline-block;
+    width: 100%;
     &.section{
       background-color: #27292c;
       width:100%;
@@ -277,7 +275,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
       margin:0;
     }
     textarea{
-      width:132px;
+      width: 100%;
     }
     &.half input{
       margin-left:72px;
@@ -472,8 +470,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .ticker{
-  @include scrollbar;
-  overflow-y: scroll;
   position:absolute;
   top:0; bottom:0;left:0;right:0;
   margin:1px;
