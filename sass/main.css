@@ -1,4 +1,4 @@
-* {
+html * {
   overflow: hidden; }
 
 #options {
@@ -12,9 +12,9 @@
   #options i {
     font-size: 7em;
     color: white;
-    opacity: .5; }
+    opacity: .2; }
     #options i:hover {
-      opacity: .8; }
+      opacity: .5; }
 
 div {
   -webkit-touch-callout: none;
@@ -190,7 +190,7 @@ li {
   left: 5px;
   right: 5px;
   overflow: hidden;
-  overflow-y: auto; }
+  overflow-y: hidden; }
   .controls input[type=text], .controls textarea {
     font-family: monospace;
     font-weight: 700;
@@ -446,5 +446,4 @@ li {
       border: 1px solid #555555;
       border-left: none;
       border-right: none;
-      padding: 2px 0;
-      text-overflow: ellipsis; }
+      padding: 2px 0; }
