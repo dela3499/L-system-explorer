@@ -1,3 +1,18 @@
+#options {
+  position: absolute;
+  right: 23.33333px;
+  top: 23.33333px;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  z-index: 2; }
+  #options i {
+    font-size: 7em;
+    color: white;
+    opacity: 0.5; }
+    #options i:hover {
+      opacity: 0.8; }
+
 div {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -54,7 +69,6 @@ body {
   right: 0;
   font-family: helvetica;
   color: #aaa;
-  text-shadow: 0.1em 0.1em #222;
   letter-spacing: 1px;
   font-size: 8pt;
   background-color: #2a4653; }
@@ -104,13 +118,13 @@ li {
   bottom: 0;
   cursor: default;
   background-color: #333;
-  left: 0;
+  right: 0;
   padding: 0 0 0 0px;
   position: absolute;
   border-right: 1px solid #555;
   top: 0;
   width: 228px;
-  display: none; }
+  z-index: 1; }
 
 .container-right {
   bottom: 240px;

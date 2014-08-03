@@ -2,6 +2,7 @@ $menu-color: #333;
 $top:0;
 $left:228px;
 $bottom:240px;
+$option-size: 70px;
 
 @mixin scrollbar{
 &::-webkit-scrollbar{width:4px;height:4px;}
@@ -9,6 +10,24 @@ $bottom:240px;
 &::-webkit-scrollbar-track-piece{ background-color: #282828;-webkit-border-radius:0;-webkit-border-bottom-right-radius:4px;-webkit-border-bottom-left-radius:4px; }
 &::-webkit-scrollbar-thumb:vertical{ height:5px;background-color: #6d6d6d;-webkit-border-radius:4px; }
 &::-webkit-scrollbar-thumb:horizontal{ width:5px;background-color:#999;-webkit-border-radius:4px; }
+}
+
+#options {
+    position: absolute;
+    right: $option-size/3;
+    top: $option-size/3;
+    height: $option-size;
+    width: $option-size;
+    text-align: center;
+    z-index: 2;
+    i {
+        font-size: 7em;
+        color: white;
+        opacity: .5;
+        &:hover {
+            opacity: .8;
+        }
+    }
 }
 
 div {
@@ -69,7 +88,7 @@ body{
   right: 0;
   font-family:helvetica;
   color:#aaa;
-  text-shadow: 0.1em 0.1em #222;
+//  text-shadow: 0.1em 0.1em #222;
   letter-spacing: 1px;
   font-size:8pt;
   background-color: #2a4653;
@@ -129,13 +148,14 @@ li{
   bottom: 0;
   cursor: default;
   background-color:$menu-color;
-  left: 0;
+  right: 0;
   padding: 0 0 0 0px;
   position: absolute;
   border-right:1px solid #555;
   top: $top;
   width: $left;
-  display: none; // Hack
+  z-index: 1;
+//  display: none; // Hack
 }
 
 .container-right{
