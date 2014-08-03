@@ -105,7 +105,7 @@ Renderer = (function() {
     start = new Date;
     this.reset(system);
     this.g.lineWidth = 0.118;
-    this.g.strokeStyle = "#13303b";
+    this.g.strokeStyle = "#dbdee2";
     this.g.beginPath();
     this.g.moveTo(this.context.state.x, this.context.state.y);
     _ref = [this.context.state, this.context.bounding], s = _ref[0], b = _ref[1];

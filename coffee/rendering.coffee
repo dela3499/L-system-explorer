@@ -62,7 +62,7 @@ class Renderer
 
     @g.lineWidth = 0.118
 #    @g.strokeStyle="#fff"
-    @g.strokeStyle="#13303b" 
+    @g.strokeStyle="#dbdee2" 
 
     @g.beginPath()
     @g.moveTo(@context.state.x, @context.state.y)
